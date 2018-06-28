@@ -1,18 +1,16 @@
-package br.com.poc;
+package br.com.poc.gson;
 
-import com.alibaba.fastjson.JSON;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.infra.Blackhole;
 
-public class FastJsonSerializationBenchmark {
-
+public class GSONSerializationBenchmark {
 
     @Benchmark
     @BenchmarkMode(value = {Mode.AverageTime, Mode.Throughput})
-    public void testMethod(FastJsonState fastJsonState, Blackhole blackhole) {
-        String jsonValue = JSON.toJSONString(fastJsonState.subject);
+    public void serializeGSON(GsonState gsonState, Blackhole blackhole) {
+        String jsonValue = gsonState.gson.toJson(gsonState.subject);
 
         blackhole.consume(jsonValue);
     }

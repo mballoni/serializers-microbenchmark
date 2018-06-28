@@ -1,0 +1,18 @@
+package br.com.poc.jackson;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.infra.Blackhole;
+
+public class JacksonSerializationBenchmark {
+
+    @Benchmark
+    @BenchmarkMode(value = {Mode.AverageTime, Mode.Throughput})
+    public void serializeJackson(JacksonState jacksonState, Blackhole blackhole) throws JsonProcessingException {
+        String jsonValue = jacksonState.objectMapper.writeValueAsString(jacksonState.subject);
+
+        blackhole.consume(jsonValue);
+    }
+}
