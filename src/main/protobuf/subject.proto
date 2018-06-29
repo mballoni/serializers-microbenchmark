@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+// This is the package where the java source code will be placed.
+option java_package = "br.com.poc.protobuf";
+package br.com.poc.protobuf;
+
+option java_multiple_files = true;
+
+// This is the name of the class.
+// If not provided, it will be created as <message name>OuterClass.
+option java_outer_classname = "SubjectProtos";
+
+message Subject {
+  string id = 1;
+  string name = 2;
+  string text = 3;
+}

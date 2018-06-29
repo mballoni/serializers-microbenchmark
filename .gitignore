@@ -17,10 +17,5 @@ logs/
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/build/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+### Protobuf generated code###
+src/generated-source
