@@ -6,12 +6,62 @@ package br.com.poc.protobuf;
 
 option java_multiple_files = true;
 
-// This is the name of the class.
-// If not provided, it will be created as <message name>OuterClass.
-option java_outer_classname = "SubjectProtos";
+message TradeDate {
+    uint32 year = 1;
+    uint32 month = 2;
+    uint32 day = 3;
+}
+
+message TradeTime {
+    uint32 hour = 1;
+    uint32 minute = 2;
+    uint32 second = 3;
+    uint64 nano = 4;
+}
+
+message TransactionTime {
+    TradeDate date = 1;
+    TradeTime time = 2;
+}
+
+message Exchange {
+    string value = 1;
+}
+
+message TradeID {
+    Exchange exchangeCode = 1;
+    TradeDate tradeDate = 2;
+    string side = 3;
+    string ticker = 4;
+    string tradeNumber = 5;
+}
+
+message Data {
+    string clientOrderID = 1;
+    string exchangeExecutionID = 2;
+    string orderID = 3;
+    string side = 4;
+    string ticker = 5;
+    string orderValidityType = 6;
+    TradeDate tradeDate = 7;
+    TransactionTime transactionTime = 8;
+    string secondaryOrderID = 9;
+    string sessionID = 10;
+    string tradeNumber = 11;
+    string brokerDealerCode = 12;
+    string enteringTrader = 13;
+    string senderLocation = 14;
+    Exchange exchangeCode = 15;
+    double price = 16;
+    double quantity = 17;
+    string account = 18;
+    string tradingSessionID = 19;
+    string tradingSessionSubID = 20;
+    string counterPartyBroker = 21;
+    TradeID tradeID = 22;
+}
 
 message Subject {
-  string id = 1;
-  string name = 2;
-  string text = 3;
+    string type = 1;
+    Data data = 2;
 }

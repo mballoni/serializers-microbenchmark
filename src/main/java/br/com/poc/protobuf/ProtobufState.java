@@ -5,9 +5,22 @@ import org.openjdk.jmh.annotations.State;
 
 @State(Scope.Thread)
 public class ProtobufState {
+    Data data = Data.newBuilder()
+            .build();
+
+    TradeDate tradeDate = TradeDate.newBuilder()
+            .build();
+    TradeID tradeID = TradeID.newBuilder()
+            .build();
+    Exchange exchange = Exchange.newBuilder()
+            .build();
+    TradeTime tradeTime = TradeTime.newBuilder()
+            .build();
+    TransactionTime transactionTime = TransactionTime.newBuilder()
+            .build();
+
     Subject subject = Subject.newBuilder()
-            .setId("1")
-            .setName("2")
-            .setText("3")
+            .setData(data)
+            .setType("type1")
             .build();
 }
