@@ -3,31 +3,33 @@ package br.com.poc.protobuf;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 
+import static br.com.poc.state.Constants.*;
+
 @State(Scope.Thread)
 public class ProtobufState {
     TradeDate tradeDate = TradeDate.newBuilder()
-            .setDay(2)
-            .setMonth(12)
-            .setYear(2018)
+            .setDay(DAY)
+            .setMonth(MONTH)
+            .setYear(YEAR)
             .build();
 
     Exchange exchange = Exchange.newBuilder()
-            .setValue("hadasokpp")
+            .setValue(EXCHANGE)
             .build();
 
     TradeID tradeID = TradeID.newBuilder()
             .setExchangeCode(exchange)
-            .setSide("BUY")
-            .setTicker("ABC3")
+            .setSide(SIDE)
+            .setTicker(TICKER)
             .setTradeDate(tradeDate)
-            .setTradeNumber("sdfsd")
+            .setTradeNumber(TRADE_NUMBER)
             .build();
 
     TradeTime tradeTime = TradeTime.newBuilder()
-            .setHour(14)
-            .setMinute(25)
-            .setMinute(13)
-            .setNano(123_123_123L)
+            .setHour(HOUR)
+            .setMinute(MINUTE)
+            .setSecond(SECOND)
+            .setNano(NANO)
             .build();
 
     TransactionTime transactionTime = TransactionTime.newBuilder()
@@ -40,28 +42,28 @@ public class ProtobufState {
             .setTransactionTime(transactionTime)
             .setTradeDate(tradeDate)
             .setExchangeCode(exchange)
-            .setClientOrderID("123454")
-            .setExchangeExecutionID("12")
-            .setOrderID("78")
-            .setSide("BUY")
-            .setTicker("ABC3")
-            .setOrderValidityType("123")
-            .setSecondaryOrderID("099")
-            .setSessionID("8009")
-            .setTradeNumber("7128")
-            .setBrokerDealerCode("6589")
-            .setEnteringTrader("589")
-            .setSenderLocation("87655")
-            .setPrice(145.12)
-            .setQuantity(45.0)
-            .setAccount("456")
-            .setTradingSessionID("089128")
-            .setTradingSessionSubID("3120")
-            .setCounterPartyBroker("989")
+            .setClientOrderID(CLIENT_ORDER_ID)
+            .setExchangeExecutionID(EXCHANGE_EXECUTION_ID)
+            .setOrderID(ORDER_ID)
+            .setSide(SIDE)
+            .setTicker(TICKER)
+            .setOrderValidityType(ORDER_VALIDITY_TYPE)
+            .setSecondaryOrderID(SECONDARY_ORDER_ID)
+            .setSessionID(SESSION_ID)
+            .setTradeNumber(TRADE_NUMBER)
+            .setBrokerDealerCode(BROKER_DEALER_CODE)
+            .setEnteringTrader(ENTERING_TRADER)
+            .setSenderLocation(SENDER_LOCATION)
+            .setPrice(PRICE)
+            .setQuantity(QUANTITY)
+            .setAccount(ACCOUNT)
+            .setTradingSessionID(TRADING_SESSION_ID)
+            .setTradingSessionSubID(TRADING_SESSION_SUB_ID)
+            .setCounterPartyBroker(COUNTER_PARTY_BROKER)
             .build();
 
     Subject subject = Subject.newBuilder()
             .setData(data)
-            .setType("type1")
+            .setType(TYPE)
             .build();
 }
