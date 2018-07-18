@@ -1,5 +1,6 @@
 package br.com.poc.fastjson;
 
+import br.com.poc.state.DefaultState;
 import com.alibaba.fastjson.JSON;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -11,8 +12,8 @@ public class FastJsonSerializationBenchmark {
 
     @Benchmark
     @BenchmarkMode(value = {Mode.AverageTime, Mode.Throughput})
-    public void serializeFastJson(FastJsonState fastJsonState, Blackhole blackhole) {
-        String jsonValue = JSON.toJSONString(fastJsonState.subject);
+    public void serializeFastJson(DefaultState state, Blackhole blackhole) {
+        String jsonValue = JSON.toJSONString(state.subject);
 
         blackhole.consume(jsonValue);
     }
