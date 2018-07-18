@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.poc</groupId>
-    <artifactId>json-microb</artifactId>
+    <artifactId>serializers-microbenchmark</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>json-microb</name>
+    <name>Serializers Microbenchmark</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
