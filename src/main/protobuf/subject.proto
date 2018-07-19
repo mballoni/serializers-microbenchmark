@@ -5,6 +5,7 @@ option java_package = "br.com.poc.protobuf";
 package br.com.poc.protobuf;
 
 option java_multiple_files = true;
+option optimize_for = SPEED;
 
 message TradeDate {
     uint32 year = 1;
