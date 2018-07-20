@@ -1,0 +1,723 @@
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.com.poc.fastjson.FastJsonSerializationBenchmark.serializeFastJson
+
+# Run progress: 0.00% complete, ETA 01:06:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 2221758.031 ops/s
+# Warmup Iteration   2: 2322499.064 ops/s
+# Warmup Iteration   3: 2510768.246 ops/s
+# Warmup Iteration   4: 2508570.934 ops/s
+# Warmup Iteration   5: 2290610.773 ops/s
+Iteration   1: 2407133.028 ops/s
+Iteration   2: 2560570.979 ops/s
+Iteration   3: 2486996.820 ops/s
+Iteration   4: 2499919.425 ops/s
+Iteration   5: 2364978.086 ops/s
+
+# Run progress: 2.50% complete, ETA 01:05:46
+# Fork: 2 of 5
+# Warmup Iteration   1: 2204470.498 ops/s
+# Warmup Iteration   2: 2470135.061 ops/s
+# Warmup Iteration   3: 2535544.028 ops/s
+# Warmup Iteration   4: 2410447.556 ops/s
+# Warmup Iteration   5: 2569365.072 ops/s
+Iteration   1: 2528038.058 ops/s
+Iteration   2: 2416437.305 ops/s
+Iteration   3: 2526211.625 ops/s
+Iteration   4: 2576835.444 ops/s
+Iteration   5: 2613402.848 ops/s
+
+# Run progress: 5.00% complete, ETA 01:04:01
+# Fork: 3 of 5
+# Warmup Iteration   1: 2296153.944 ops/s
+# Warmup Iteration   2: 2580586.664 ops/s
+# Warmup Iteration   3: 2108132.086 ops/s
+# Warmup Iteration   4: 2387364.725 ops/s
+# Warmup Iteration   5: 2365161.333 ops/s
+Iteration   1: 2471434.960 ops/s
+Iteration   2: 2546808.889 ops/s
+Iteration   3: 2510833.031 ops/s
+Iteration   4: 2476929.527 ops/s
+Iteration   5: 2469619.808 ops/s
+
+# Run progress: 7.50% complete, ETA 01:02:18
+# Fork: 4 of 5
+# Warmup Iteration   1: 2371473.944 ops/s
+# Warmup Iteration   2: 2461526.016 ops/s
+# Warmup Iteration   3: 2455218.576 ops/s
+# Warmup Iteration   4: 2375945.879 ops/s
+# Warmup Iteration   5: 2039462.256 ops/s
+Iteration   1: 2261747.230 ops/s
+Iteration   2: 2444789.391 ops/s
+Iteration   3: 2426578.063 ops/s
+Iteration   4: 2560846.886 ops/s
+Iteration   5: 2455769.238 ops/s
+
+# Run progress: 10.00% complete, ETA 01:00:36
+# Fork: 5 of 5
+# Warmup Iteration   1: 2185574.468 ops/s
+# Warmup Iteration   2: 2466756.816 ops/s
+# Warmup Iteration   3: 2447216.047 ops/s
+# Warmup Iteration   4: 2439451.004 ops/s
+# Warmup Iteration   5: 2389842.688 ops/s
+Iteration   1: 2419445.520 ops/s
+Iteration   2: 2388910.467 ops/s
+Iteration   3: 2456701.040 ops/s
+Iteration   4: 2478393.608 ops/s
+Iteration   5: 2388792.080 ops/s
+
+
+Result "br.com.poc.fastjson.FastJsonSerializationBenchmark.serializeFastJson":
+  2469524.934 ?(99.9%) 57957.971 ops/s [Average]
+  (min, avg, max) = (2261747.230, 2469524.934, 2613402.848), stdev = 77372.232
+  CI (99.9%): [2411566.964, 2527482.905] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.com.poc.gson.GSONSerializationBenchmark.serializeGSON
+
+# Run progress: 12.50% complete, ETA 00:58:56
+# Fork: 1 of 5
+# Warmup Iteration   1: 57408.570 ops/s
+# Warmup Iteration   2: 60146.334 ops/s
+# Warmup Iteration   3: 65948.377 ops/s
+# Warmup Iteration   4: 67413.513 ops/s
+# Warmup Iteration   5: 64441.845 ops/s
+Iteration   1: 63236.643 ops/s
+Iteration   2: 66199.412 ops/s
+Iteration   3: 65295.225 ops/s
+Iteration   4: 64997.562 ops/s
+Iteration   5: 65860.866 ops/s
+
+# Run progress: 15.00% complete, ETA 00:57:17
+# Fork: 2 of 5
+# Warmup Iteration   1: 54805.540 ops/s
+# Warmup Iteration   2: 62902.347 ops/s
+# Warmup Iteration   3: 62390.810 ops/s
+# Warmup Iteration   4: 56350.449 ops/s
+# Warmup Iteration   5: 62147.102 ops/s
+Iteration   1: 61044.285 ops/s
+Iteration   2: 63830.547 ops/s
+Iteration   3: 65998.820 ops/s
+Iteration   4: 64008.719 ops/s
+Iteration   5: 61763.509 ops/s
+
+# Run progress: 17.50% complete, ETA 00:55:36
+# Fork: 3 of 5
+# Warmup Iteration   1: 56993.511 ops/s
+# Warmup Iteration   2: 64162.302 ops/s
+# Warmup Iteration   3: 65191.885 ops/s
+# Warmup Iteration   4: 69344.636 ops/s
+# Warmup Iteration   5: 69880.093 ops/s
+Iteration   1: 65262.216 ops/s
+Iteration   2: 66593.352 ops/s
+Iteration   3: 70128.400 ops/s
+Iteration   4: 70576.456 ops/s
+Iteration   5: 67645.231 ops/s
+
+# Run progress: 20.00% complete, ETA 00:53:55
+# Fork: 4 of 5
+# Warmup Iteration   1: 62793.244 ops/s
+# Warmup Iteration   2: 60832.654 ops/s
+# Warmup Iteration   3: 67862.326 ops/s
+# Warmup Iteration   4: 66526.178 ops/s
+# Warmup Iteration   5: 61013.230 ops/s
+Iteration   1: 65638.660 ops/s
+Iteration   2: 67259.885 ops/s
+Iteration   3: 65668.303 ops/s
+Iteration   4: 66273.629 ops/s
+Iteration   5: 66816.272 ops/s
+
+# Run progress: 22.50% complete, ETA 00:52:13
+# Fork: 5 of 5
+# Warmup Iteration   1: 65717.109 ops/s
+# Warmup Iteration   2: 69244.595 ops/s
+# Warmup Iteration   3: 70462.659 ops/s
+# Warmup Iteration   4: 60850.574 ops/s
+# Warmup Iteration   5: 67344.290 ops/s
+Iteration   1: 70488.477 ops/s
+Iteration   2: 69620.616 ops/s
+Iteration   3: 70136.478 ops/s
+Iteration   4: 70563.511 ops/s
+Iteration   5: 68560.632 ops/s
+
+
+Result "br.com.poc.gson.GSONSerializationBenchmark.serializeGSON":
+  66538.708 ?(99.9%) 2022.911 ops/s [Average]
+  (min, avg, max) = (61044.285, 66538.708, 70576.456), stdev = 2700.528
+  CI (99.9%): [64515.797, 68561.619] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.com.poc.jackson.JacksonSerializationBenchmark.serializeJackson
+
+# Run progress: 25.00% complete, ETA 00:50:32
+# Fork: 1 of 5
+# Warmup Iteration   1: 1534165.484 ops/s
+# Warmup Iteration   2: 1891110.978 ops/s
+# Warmup Iteration   3: 1833178.450 ops/s
+# Warmup Iteration   4: 1928174.403 ops/s
+# Warmup Iteration   5: 1888551.121 ops/s
+Iteration   1: 1730150.093 ops/s
+Iteration   2: 1909676.964 ops/s
+Iteration   3: 1893230.179 ops/s
+Iteration   4: 1956132.796 ops/s
+Iteration   5: 1911945.385 ops/s
+
+# Run progress: 27.50% complete, ETA 00:48:52
+# Fork: 2 of 5
+# Warmup Iteration   1: 1760006.908 ops/s
+# Warmup Iteration   2: 1796684.320 ops/s
+# Warmup Iteration   3: 1931007.194 ops/s
+# Warmup Iteration   4: 1957953.831 ops/s
+# Warmup Iteration   5: 1907026.396 ops/s
+Iteration   1: 1964107.748 ops/s
+Iteration   2: 1878445.332 ops/s
+Iteration   3: 1784213.900 ops/s
+Iteration   4: 1876502.460 ops/s
+Iteration   5: 1853478.430 ops/s
+
+# Run progress: 30.00% complete, ETA 00:47:11
+# Fork: 3 of 5
+# Warmup Iteration   1: 1696238.981 ops/s
+# Warmup Iteration   2: 1857539.055 ops/s
+# Warmup Iteration   3: 1852424.463 ops/s
+# Warmup Iteration   4: 1750884.084 ops/s
+# Warmup Iteration   5: 1848246.334 ops/s
+Iteration   1: 1926849.221 ops/s
+Iteration   2: 1907588.550 ops/s
+Iteration   3: 1880716.529 ops/s
+Iteration   4: 1795828.036 ops/s
+Iteration   5: 1802538.038 ops/s
+
+# Run progress: 32.50% complete, ETA 00:45:30
+# Fork: 4 of 5
+# Warmup Iteration   1: 1663509.163 ops/s
+# Warmup Iteration   2: 1763328.482 ops/s
+# Warmup Iteration   3: 1864524.690 ops/s
+# Warmup Iteration   4: 1863757.490 ops/s
+# Warmup Iteration   5: 1729377.250 ops/s
+Iteration   1: 1789889.087 ops/s
+Iteration   2: 1844106.085 ops/s
+Iteration   3: 1796375.841 ops/s
+Iteration   4: 1883926.404 ops/s
+Iteration   5: 1803063.126 ops/s
+
+# Run progress: 35.00% complete, ETA 00:43:50
+# Fork: 5 of 5
+# Warmup Iteration   1: 1481613.176 ops/s
+# Warmup Iteration   2: 1829000.894 ops/s
+# Warmup Iteration   3: 1775729.926 ops/s
+# Warmup Iteration   4: 1761345.888 ops/s
+# Warmup Iteration   5: 1812407.985 ops/s
+Iteration   1: 1906391.427 ops/s
+Iteration   2: 1794287.633 ops/s
+Iteration   3: 1895082.155 ops/s
+Iteration   4: 1886431.715 ops/s
+Iteration   5: 1871731.970 ops/s
+
+
+Result "br.com.poc.jackson.JacksonSerializationBenchmark.serializeJackson":
+  1861707.564 ?(99.9%) 44759.054 ops/s [Average]
+  (min, avg, max) = (1730150.093, 1861707.564, 1964107.748), stdev = 59752.057
+  CI (99.9%): [1816948.510, 1906466.618] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.com.poc.protobuf.ProtobufSerializationBenchmark.serializeProtobuf
+
+# Run progress: 37.50% complete, ETA 00:42:09
+# Fork: 1 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+1002639.316 ops/s
+# Warmup Iteration   2: 1085003.913 ops/s
+# Warmup Iteration   3: 938059.288 ops/s
+# Warmup Iteration   4: 964160.405 ops/s
+# Warmup Iteration   5: 1097762.693 ops/s
+Iteration   1: 1084340.383 ops/s
+Iteration   2: 1050728.703 ops/s
+Iteration   3: 1090641.350 ops/s
+Iteration   4: 985681.792 ops/s
+Iteration   5: 1110568.730 ops/s
+
+# Run progress: 40.00% complete, ETA 00:40:27
+# Fork: 2 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+1035162.925 ops/s
+# Warmup Iteration   2: 1081967.136 ops/s
+# Warmup Iteration   3: 1102264.888 ops/s
+# Warmup Iteration   4: 1122348.063 ops/s
+# Warmup Iteration   5: 1039984.480 ops/s
+Iteration   1: 1081963.724 ops/s
+Iteration   2: 1117000.461 ops/s
+Iteration   3: 1131582.216 ops/s
+Iteration   4: 1119921.926 ops/s
+Iteration   5: 1135083.006 ops/s
+
+# Run progress: 42.50% complete, ETA 00:38:46
+# Fork: 3 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+910342.490 ops/s
+# Warmup Iteration   2: 1027051.046 ops/s
+# Warmup Iteration   3: 1059457.890 ops/s
+# Warmup Iteration   4: 1052683.913 ops/s
+# Warmup Iteration   5: 1080671.700 ops/s
+Iteration   1: 1078300.632 ops/s
+Iteration   2: 981912.508 ops/s
+Iteration   3: 1059453.855 ops/s
+Iteration   4: 1059330.940 ops/s
+Iteration   5: 1055855.057 ops/s
+
+# Run progress: 45.00% complete, ETA 00:37:05
+# Fork: 4 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+989020.827 ops/s
+# Warmup Iteration   2: 1098557.354 ops/s
+# Warmup Iteration   3: 960812.107 ops/s
+# Warmup Iteration   4: 1110598.639 ops/s
+# Warmup Iteration   5: 1120380.167 ops/s
+Iteration   1: 1094453.388 ops/s
+Iteration   2: 1077615.179 ops/s
+Iteration   3: 1102997.681 ops/s
+Iteration   4: 1018491.045 ops/s
+Iteration   5: 1099585.905 ops/s
+
+# Run progress: 47.50% complete, ETA 00:35:23
+# Fork: 5 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+953520.435 ops/s
+# Warmup Iteration   2: 1054176.500 ops/s
+# Warmup Iteration   3: 1073586.493 ops/s
+# Warmup Iteration   4: 1062995.801 ops/s
+# Warmup Iteration   5: 945707.670 ops/s
+Iteration   1: 1050821.189 ops/s
+Iteration   2: 1086567.030 ops/s
+Iteration   3: 1097272.087 ops/s
+Iteration   4: 1091150.137 ops/s
+Iteration   5: 1077034.611 ops/s
+
+
+Result "br.com.poc.protobuf.ProtobufSerializationBenchmark.serializeProtobuf":
+  1077534.141 ?(99.9%) 29261.109 ops/s [Average]
+  (min, avg, max) = (981912.508, 1077534.141, 1135083.006), stdev = 39062.743
+  CI (99.9%): [1048273.033, 1106795.250] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: br.com.poc.fastjson.FastJsonSerializationBenchmark.serializeFastJson
+
+# Run progress: 50.00% complete, ETA 00:33:42
+# Fork: 1 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 52.50% complete, ETA 00:32:01
+# Fork: 2 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 55.00% complete, ETA 00:30:19
+# Fork: 3 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 57.50% complete, ETA 00:28:38
+# Fork: 4 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 60.00% complete, ETA 00:26:57
+# Fork: 5 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+
+Result "br.com.poc.fastjson.FastJsonSerializationBenchmark.serializeFastJson":
+  ? 10?? s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: br.com.poc.gson.GSONSerializationBenchmark.serializeGSON
+
+# Run progress: 62.50% complete, ETA 00:25:16
+# Fork: 1 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 65.00% complete, ETA 00:23:35
+# Fork: 2 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 67.50% complete, ETA 00:21:54
+# Fork: 3 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 70.00% complete, ETA 00:20:12
+# Fork: 4 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 72.50% complete, ETA 00:18:31
+# Fork: 5 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+
+Result "br.com.poc.gson.GSONSerializationBenchmark.serializeGSON":
+  ? 10?? s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: br.com.poc.jackson.JacksonSerializationBenchmark.serializeJackson
+
+# Run progress: 75.00% complete, ETA 00:16:50
+# Fork: 1 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 77.50% complete, ETA 00:15:09
+# Fork: 2 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 80.00% complete, ETA 00:13:28
+# Fork: 3 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 82.50% complete, ETA 00:11:47
+# Fork: 4 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 85.00% complete, ETA 00:10:06
+# Fork: 5 of 5
+# Warmup Iteration   1: ? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+
+Result "br.com.poc.jackson.JacksonSerializationBenchmark.serializeJackson":
+  ? 10?? s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 10.0.2, Java HotSpot(TM) 64-Bit Server VM, 10.0.2+13
+# VM invoker: /usr/lib/jvm/java-10-oracle/bin/java
+# VM options: -Xms700m -Xmx700m
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: br.com.poc.protobuf.ProtobufSerializationBenchmark.serializeProtobuf
+
+# Run progress: 87.50% complete, ETA 00:08:25
+# Fork: 1 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 90.00% complete, ETA 00:06:44
+# Fork: 2 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 92.50% complete, ETA 00:05:03
+# Fork: 3 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 95.00% complete, ETA 00:03:22
+# Fork: 4 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+# Run progress: 97.50% complete, ETA 00:01:41
+# Fork: 5 of 5
+# Warmup Iteration   1: WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/root/benchmarks.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+? 10?? s/op
+# Warmup Iteration   2: ? 10?? s/op
+# Warmup Iteration   3: ? 10?? s/op
+# Warmup Iteration   4: ? 10?? s/op
+# Warmup Iteration   5: ? 10?? s/op
+Iteration   1: ? 10?? s/op
+Iteration   2: ? 10?? s/op
+Iteration   3: ? 10?? s/op
+Iteration   4: ? 10?? s/op
+Iteration   5: ? 10?? s/op
+
+
+Result "br.com.poc.protobuf.ProtobufSerializationBenchmark.serializeProtobuf":
+  ? 10?? s/op
+
+
+# Run complete. Total time: 01:07:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                         Mode  Cnt        Score       Error  Units
+b.c.p.fastjson.FastJsonSerializationBenchmark.serializeFastJson  thrpt   25  2469524.934 ? 57957.971  ops/s
+b.c.p.gson.GSONSerializationBenchmark.serializeGSON              thrpt   25    66538.708 ?  2022.911  ops/s
+b.c.p.jackson.JacksonSerializationBenchmark.serializeJackson     thrpt   25  1861707.564 ? 44759.054  ops/s
+b.c.p.protobuf.ProtobufSerializationBenchmark.serializeProtobuf  thrpt   25  1077534.141 ? 29261.109  ops/s
+b.c.p.fastjson.FastJsonSerializationBenchmark.serializeFastJson   avgt   25       ? 10??               s/op
+b.c.p.gson.GSONSerializationBenchmark.serializeGSON               avgt   25       ? 10??               s/op
+b.c.p.jackson.JacksonSerializationBenchmark.serializeJackson      avgt   25       ? 10??               s/op
+b.c.p.protobuf.ProtobufSerializationBenchmark.serializeProtobuf   avgt   25       ? 10??               s/op
